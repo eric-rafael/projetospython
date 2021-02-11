@@ -1,15 +1,13 @@
-from tkinter import *
-class Application:
-def __init__(self, master=None):
-      self.widget1 = Frame(master)
-      self.widget1.pack()
-      self.msg = Label(self.widget1, text="Primeiro widget")
-      self.msg.pack ()
-root = Tk()
-Application(root)
-root.mainloop()
-
 y= float(input("insira y: "))
 x= float(input("insira x: "))
+yx= y+x
+print ("soma {} + {} = {}".format(x, y, yx))
 
-print ("soma x + y =", y+x)
+if yx > 10:
+    b = yx
+    b += 10
+    print("\ncomo é mais que dez \ncolocarei mais 10, logo,\n{} + 10.0 = {} \n".format(b, yx))
+elif yx == 10:
+    print("igual a dez")
+else:
+    print("menos que dez")
