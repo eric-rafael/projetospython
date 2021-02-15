@@ -1,7 +1,7 @@
 y= float(input("insira y: "))
 x= float(input("insira x: "))
 yx= y+x
-print ("soma {} + {} = {}".format(x, y, yx))
+print ("soma {} + {} = {}".format( x, y, yx))
 
 if yx > 10:
     b = yx
